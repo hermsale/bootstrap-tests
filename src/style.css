@@ -1,0 +1,8 @@
+.main-carousel .carousel-inner img{
+    max-height: 70vh;
+    /* esta propiedad  estira la imagen y hace un pequeño zoom*/
+    object-fit: cover;
+
+    /* filtro para darle escala de grises a la imagen */
+    filter: grayscale(50%);
+}
