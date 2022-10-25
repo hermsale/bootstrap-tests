@@ -1,3 +1,8 @@
+:root{
+    --main-letraPlatzi:#97c93e; /* color platzi */ 
+    --main-letraPlatzi-hover:#6ca804;
+}
+
 .main-carousel .carousel-inner img{
     max-height: 70vh;
     /* esta propiedad  estira la imagen y hace un pequeño zoom*/
@@ -42,6 +47,10 @@
     align-items: center;
 }
 
-.btn-success-platzi{
-    background-color: var();
+.btn-success__platzi{
+    background-color: var(--main-letraPlatzi);
+}
+
+.btn-success__platzi:hover{
+    background-color: var(--main-letraPlatzi-hover);
 }
