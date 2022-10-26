@@ -54,3 +54,9 @@
 .btn-success__platzi:hover{
     background-color: var(--main-letraPlatzi-hover);
 }
+
+/* aplicamos parametros de tamaño de imagen y estiramiento para que todas queden iguales */
+#speakers img{
+    height: 20rem;
+    object-fit: cover;
+}
