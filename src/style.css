@@ -76,6 +76,15 @@
   transition: background-color 0.5s ease-out;
 }
 
+.card-hover-overlay{
+    background: rgba(199, 198, 198, 0.5);
+    
+    /* -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out; */
+    transition: background-color 0.5s ease-out;
+  }
+
 .badge:hover{
     border: black solid 1px;
     
