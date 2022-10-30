@@ -87,6 +87,8 @@ width: 80px;
     background-color: var(--main-letraPlatzi-hover);
 }
 
+/* speakers ////////////////////////////////////////////////////////////////////////////// */
+
 /* aplicamos parametros de tamaño de imagen y estiramiento para que todas queden iguales */
 #speakers img{
     height: 20rem;
