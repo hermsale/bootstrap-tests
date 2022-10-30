@@ -12,80 +12,17 @@
     filter: grayscale(70%);
 }
 
-
-#carousel{
-    /* lo definimos relative para que se superpongan cosas por encima del bloque */
-    position: relative;
-
-}
-
-#carousel .overlay{
-    
-    /* hacemos que se expanda adelante y el ancho y alto del carousel  */
-    position: absolute;
-
-    /* le indicamos que no tenga espacio desde arriba y abajo y los lados  */
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    background-color: rgba(0, 0, 0, 0.3);
-
-    color:white;
-    z-index: 1;
-
-   
-}
-
-/* para centrar de manera vertical tenemos que citar los contenedores y usar la propiedad align-items
-    para poder asignar de forma vertical debemos dar un alto de esta forma asignamos un ancho al container y al row
-*/
-#carousel .overlay .container,
-#carousel .overlay .row{
-    /* height: 100%; */
-    align-items: center;
-}
-
-.btn-success__platzi{
+.btn-platzi{
     background-color: var(--main-letraPlatzi);
+    color: white;
+    border: #6ca804 1px solid;
 }
 
-.btn-success__platzi:hover{
+.btn-platzi:hover{
     background-color: var(--main-letraPlatzi-hover);
+    color: white;
 }
 
-/* aplicamos parametros de tamaño de imagen y estiramiento para que todas queden iguales */
-#speakers img{
-    height: 20rem;
-    object-fit: cover;
-}
-
-.card{
-    cursor: pointer;
-}
-
-
-/* interacciones  */
-.card-hover-overlay:hover{
-  background: rgba(29, 236, 197, 0.5);
-  
-  /* -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out; */
-  transition: background-color 0.5s ease-out;
-}
-
-.card-hover-overlay{
-    background: rgba(199, 198, 198, 0.5);
-    
-    /* -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out; */
-    transition: background-color 0.5s ease-out;
-  }
-
-.badge:hover{
-    border: black solid 1px;
-    
+.abbr_tooltip:hover{
+    background-color: var(--main-letraPlatzi);
 }
