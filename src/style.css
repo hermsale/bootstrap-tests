@@ -31,3 +31,57 @@ width: 80px;
     text-decoration: none;
     color: white;
 }
+
+/* carousel */
+
+.main-carousel .carousel-inner img{
+    max-height: 70vh;
+    /* esta propiedad  estira la imagen y hace un pequeño zoom*/
+    object-fit: cover;
+
+    /* filtro para darle escala de grises a la imagen */
+    filter: grayscale(70%);
+}
+
+
+#carousel{
+    /* lo definimos relative para que se superpongan cosas por encima del bloque */
+    position: relative;
+
+}
+
+#carousel .overlay{
+    
+    /* hacemos que se expanda adelante y el ancho y alto del carousel  */
+    position: absolute;
+
+    /* le indicamos que no tenga espacio desde arriba y abajo y los lados  */
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+
+    color:white;
+    z-index: 1;
+
+   
+}
+
+/* para centrar de manera vertical tenemos que citar los contenedores y usar la propiedad align-items
+    para poder asignar de forma vertical debemos dar un alto de esta forma asignamos un ancho al container y al row
+*/
+#carousel .overlay .container,
+#carousel .overlay .row{
+    /* height: 100%; */
+    align-items: center;
+}
+
+.btn-success__platzi{
+    background-color: var(--main-letraPlatzi);
+}
+
+.btn-success__platzi:hover{
+    background-color: var(--main-letraPlatzi-hover);
+}
