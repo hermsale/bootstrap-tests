@@ -123,3 +123,30 @@ width: 80px;
     border: black solid 1px;
     
 }
+
+
+/* formulario //////////// */
+
+.main-carousel .carousel-inner img{
+    max-height: 70vh;
+    /* esta propiedad  estira la imagen y hace un pequeño zoom*/
+    object-fit: cover;
+
+    /* filtro para darle escala de grises a la imagen */
+    filter: grayscale(70%);
+}
+
+.btn-platzi{
+    background-color: var(--main-letraPlatzi);
+    color: white;
+    border: #6ca804 1px solid;
+}
+
+.btn-platzi:hover{
+    background-color: var(--main-letraPlatzi-hover);
+    color: white;
+}
+
+.abbr_tooltip:hover{
+    background-color: var(--main-letraPlatzi);
+}
