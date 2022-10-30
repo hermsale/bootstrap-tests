@@ -1,0 +1,22 @@
+/* colores */
+:root{
+    --main-letraPlatzi:#97c93e; /* color platzi */ 
+    --main-letraPlatzi-hover:#6ca804;
+}
+
+nav img{
+width: 80px;
+/* padding-right: 5px; */
+}
+
+.navbar-brand span{
+    padding-left: 5px;
+}
+
+.navbar-nav .nav-item .text-platzi{
+    color:var(--main-letraPlatzi);
+}
+
+.navbar-nav .nav-item .text-platzi:hover{
+    color:var(--main-letraPlatzi-hover);
+}
