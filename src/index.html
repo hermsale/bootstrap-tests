@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <title>Platzi Conf</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="navbar"  data-bs-offset="57" >
     
     <!-- header  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <!-- aplicamos display-flex para que se alinie el icono con el resto-->
             <a class="navbar-brand d-flex " href="#">
@@ -20,25 +20,25 @@
                 <span>Conf Hawaii</span> 
             </a>
             <!-- boton hamburguesa  -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            
-            <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <!-- reemplazamos el id a solo navbar -->
+            <div class="collapse navbar-collapse"  id="navbar">
               <!-- alineo a la derecha (margin start ms) -->
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                <a class="nav-link" href="#">La conferencia</a>
-                </li>
-                <li class="nav-item ">
-                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#carousel">La conferencia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#speakers">Los oradores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Conviertete en orador</a>
+                    <a class="nav-link" href="#place-time">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_solicitud_orador">Conviertete en orador</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-platzi" href="#">Comprar ticket</a>
