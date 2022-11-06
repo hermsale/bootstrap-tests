@@ -37,7 +37,7 @@ btnPrimarySacha.addEventListener('click', ()=>{
 
 
 // formulario 
-// implementamos el tooltip 
+// implementamos el tooltip (mensaje que sale por encima de la palabra)
 let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
